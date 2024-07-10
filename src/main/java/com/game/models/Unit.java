@@ -1,2 +1,4 @@
-package com.game.models;public class Unit {
+package com.game.models;
+
+public class Unit {
 }

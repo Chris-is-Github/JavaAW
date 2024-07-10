@@ -1,2 +1,4 @@
-package com.game.controllers;public class GameController {
+package com.game.controllers;
+
+public class GameController {
 }

@@ -1,2 +1,4 @@
-package com.game.views;public class GameView {
+package com.game.views;
+
+public class GameView {
 }

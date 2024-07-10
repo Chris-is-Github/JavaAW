@@ -1,2 +1,5 @@
-package com.game.models;public class Tile {
+package com.game.models;
+
+public class Tile
+{
 }
