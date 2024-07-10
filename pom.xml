@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>javaw-project</artifactId>
+  <version>1.0-SNAPSHOS</version>
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <javazx".version>17</javax.version>
+    <maven.plugin.version>0.8.6</maven.plugin.version>
+  </properties>
+
+  <dependencies>
+    <!-- JavaXF dependencies -->
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javax-controls</artifactId>
+      <version>{${javax.version}}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javax-fml</artifactId>
+      <version>{${javax.version}}</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>{${maven.compiler.source}}</source>
+          <target>{${maven.compiler.target}}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javax-maven-plugin</artifactId>
+        <version>{maven.plugin.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>start</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.game.main</mainClass>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>
